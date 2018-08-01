@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /work
+alias cl='/opt/eosio/bin/cleos -u http://nodeos:8888 --wallet-url http://localhost:8900'
+export PS1="\W$ "
+echo "EOS Dev environment ready!"
+
+## Insert here your startup commands
+# ..
+

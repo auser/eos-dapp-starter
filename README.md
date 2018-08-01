@@ -1,3 +1,11 @@
-docker-compose up
+Start everything:
 
-docker-compose exec -u $(id -u $USER) builder bash --rcfile /bashrc
+```bash
+docker-compose up
+```
+
+Execute things on the builder
+
+```bash
+docker-compose exec -u $(id -u $USER) keosd bash --rcfile /bashrc
+```
