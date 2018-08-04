@@ -28,7 +28,7 @@ services:
       - nodeosd:nodeos
     volumes:
       - /tmp/eosio/keosd:/opt/eosio/data-dir
-      - ./contracts:/work
+      - ${PWD}/Project:/work
       - ${PWD}/keys:/keys
       - ${PWD}/config/bashrc:/bashrc
     stop_grace_period: 10m
